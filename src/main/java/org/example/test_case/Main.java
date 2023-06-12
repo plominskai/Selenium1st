@@ -13,6 +13,7 @@ package org.example.test_case;//package org.example;
 //}
 
 import org.example.pages.HomePage;
+import org.example.pages.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,11 +32,17 @@ public class Main {
         driver.get("https://demoqa.com/books");
         driver.manage().window().maximize();
 
-        //
+        // HomePage
         HomePage homePage = new HomePage(driver);
+        // LoginPage
+        LoginPage loginPage = new LoginPage(driver);
 
         // click on login button in homepage
         homePage.loginClick();
+
+        // enter user name
+        loginPage.enterUserName("gunjankaushik");
+
 
 
 //
