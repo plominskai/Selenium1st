@@ -23,26 +23,34 @@ public class Main {
         // Set up browser
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
-        ChromeDriver driver = new ChromeDriver(ops);
+        WebDriver driver = new ChromeDriver(ops);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        // Open Google
-        driver.get("https://www.w3schools.com/xml/xpath_syntax.asp");
+        // Open webpage
+        driver.get("https://demoqa.com/books");
         driver.manage().window().maximize();
 
-        // Find path do accept cookie files -  //*[@id="accept-choices"]
-        driver.findElement(By.xpath("//*[@id=\"accept-choices\"]")).click();
+        // click on the Login button
+        driver.findElement(By.id("login")).click();
 
+        // user name, password, click and log in
+        driver.findElement(By.id("userName")).sendKeys("gunjankaushik");
+        driver.findElement(By.id("password")).sendKeys("Password@123");
+        driver.findElement(By.id("login")).click();
 
+        // wait for 3 sek before move on
+        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        // show the place where you are in Intelij terminal
+        System.out.println("Jesteś na stronie: " + driver.getCurrentUrl());
+
+        // close Chrome
+        driver.quit();
 
     }
 }
-
-//public class Main {
-//
-//    public static void main(String[] args) {
-//        System.setProperty("Webdriver.Chrome.Driver", "C:\\Users\\plomi\\Selenium\\chromedriver\\chromedriver.exe");
-//        WebDriver driver = new ChromeDriver();
-//        driver.get("https://google.com");
-//    }
-//}
