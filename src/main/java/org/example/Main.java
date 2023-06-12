@@ -26,8 +26,10 @@ public class Main {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Open Google
-        driver.get("https://www.google.com");
+        driver.get("https://www.w3schools.com/xml/xpath_syntax.asp");
         driver.manage().window().maximize();
+
+        //*[@id="topnav"]/div/div[1]/a[5]
 
     }
 }
