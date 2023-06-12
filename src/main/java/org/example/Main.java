@@ -31,3 +31,12 @@ public class Main {
 
     }
 }
+
+//public class Main {
+//
+//    public static void main(String[] args) {
+//        System.setProperty("Webdriver.Chrome.Driver", "C:\\Users\\plomi\\Selenium\\chromedriver\\chromedriver.exe");
+//        WebDriver driver = new ChromeDriver();
+//        driver.get("https://google.com");
+//    }
+//}
