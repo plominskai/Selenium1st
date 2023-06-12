@@ -12,6 +12,7 @@
 //    }
 //}
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -29,7 +30,10 @@ public class Main {
         driver.get("https://www.w3schools.com/xml/xpath_syntax.asp");
         driver.manage().window().maximize();
 
-        //*[@id="topnav"]/div/div[1]/a[5]
+        // Find path do accept cookie files -  //*[@id="accept-choices"]
+        driver.findElement(By.xpath("//*[@id=\"accept-choices\"]")).click();
+
+
 
     }
 }
