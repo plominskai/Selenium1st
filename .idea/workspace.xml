@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b1a4dba-89ca-4173-9f13-3bf037477670" name="Changes" comment="update of the class Main">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="2b1a4dba-89ca-4173-9f13-3bf037477670" name="Changes" comment="added xpath to accept cookies">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b63d907b-50ef-48ad-b1d6-ac9c3a291a20" />
+        <option name="url" value="https://github.com/plominskai/Selenium1st.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/org/example/Main.java" root0="FORCE_HIGHLIGHTING" />
@@ -91,7 +100,28 @@
       <option name="project" value="LOCAL" />
       <updated>1686485059294</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1686587350605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686587350605</updated>
+    </task>
+    <task id="LOCAL-00004" summary="webpage change to www.w3school.com">
+      <created>1686588942451</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686588942451</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added xpath to accept cookies">
+      <created>1686589656222</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686589656222</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +138,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit for 1st project Selenium" />
     <MESSAGE value="update of the class Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="update of the class Main" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="webpage change to www.w3school.com" />
+    <MESSAGE value="added xpath to accept cookies" />
+    <option name="LAST_COMMIT_MESSAGE" value="added xpath to accept cookies" />
   </component>
 </project>
