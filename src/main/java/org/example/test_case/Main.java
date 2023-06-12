@@ -1,10 +1,10 @@
-//package org.example;
+package org.example.test_case;//package org.example;
 //
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 //
 //
-//public class Main {
+//public class org.example.test_case.Main {
 //    public static void main(String[] args) {
 //        System.setProperty("webDriver.Chrome.Driver", "C:\\Users\\plomi\\Selenium\\ChromeDriver\\chromedriver.exe");
 //        WebDriver webDriver = new ChromeDriver();
@@ -12,6 +12,7 @@
 //    }
 //}
 
+import org.example.pages.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,27 +31,35 @@ public class Main {
         driver.get("https://demoqa.com/books");
         driver.manage().window().maximize();
 
-        // click on the Login button
-        driver.findElement(By.id("login")).click();
+        //
+        HomePage homePage = new HomePage(driver);
 
-        // user name, password, click and log in
-        driver.findElement(By.id("userName")).sendKeys("gunjankaushik");
-        driver.findElement(By.id("password")).sendKeys("Password@123");
-        driver.findElement(By.id("login")).click();
+        // click on login button in homepage
+        homePage.loginClick();
 
-        // wait for 3 sek before move on
-        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
-        // show the place where you are in Intelij terminal
-        System.out.println("Jesteś na stronie: " + driver.getCurrentUrl());
-
-        // close Chrome
-        driver.quit();
-
+//
+//        // click on the Login button
+//        driver.findElement(By.id("login")).click();
+//
+//        // user name, password, click and log in
+//        driver.findElement(By.id("userName")).sendKeys("gunjankaushik");
+//        driver.findElement(By.id("password")).sendKeys("Password@123");
+//        driver.findElement(By.id("login")).click();
+//
+//
+//        // wait for 5 sek before move on
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//
+//        // show the place where you are in Intelij terminal
+//        System.out.println("Jesteś na stronie: " + driver.getCurrentUrl());
+//
+//        // close Chrome
+//        driver.quit();
+//
     }
 }
