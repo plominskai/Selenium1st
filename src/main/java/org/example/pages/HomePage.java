@@ -2,6 +2,8 @@ package org.example.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
 
@@ -12,11 +14,11 @@ public class HomePage {
 
     }
 
-    // button declaration
-    By loginButton = By.id("login");
+    @FindBy(id = "login")
+    WebElement login;
 
     // method to click login button
     public void loginClick() {
-        driver.findElement(loginButton).click();
+        login.click();
     }
 }
