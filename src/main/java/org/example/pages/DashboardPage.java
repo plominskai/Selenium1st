@@ -22,8 +22,8 @@ public class DashboardPage {
     public void isCurrentUserCorrect(String user1) {
 
         if (currentUser.getText().equalsIgnoreCase(user1)) {
-            System.out.println("Prawidlowy uzytkownik zostal zalogowany" +
-                    "Wprowadzony: " + user1 + ("\n") + "Zalogowany: " + currentUser.getText());
+            System.out.println("Prawidlowy uzytkownik zostal zalogowany" + ("\n") +
+                    "Wprowadzony user: " + user1 + ("\n") + "Zalogowany user: " + currentUser.getText());
         } else {
             System.out.println("Nieprawidlowy uzytkownik zostal zalogowany" + ("\n") +
                     "Wprowadzony user: " + user1 + ("\n") + "Zalogowany user: " + currentUser.getText());
