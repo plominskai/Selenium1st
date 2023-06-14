@@ -43,6 +43,13 @@ public class Main {
         // enter user name
         loginPage.enterUserName("gunjankaushik");
 
+        //enter password
+        loginPage.enterPassword("Password@123");
+
+        //click on login button
+        loginPage.loginClick();
+    }
+}
 
 
 //
@@ -68,5 +75,4 @@ public class Main {
 //        // close Chrome
 //        driver.quit();
 //
-    }
-}
+
